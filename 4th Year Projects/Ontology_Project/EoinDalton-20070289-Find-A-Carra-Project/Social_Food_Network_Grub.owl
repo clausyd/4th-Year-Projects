@@ -1,0 +1,1645 @@
+<?xml version="1.0"?>
+
+<!-- This is used to difine the documents type -->
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<!-- This is where URL's are used to point to schemas on the net -->
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/eoin/ontologies/2019/2/GRUB-ontology-74"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/eoin/ontologies/2019/2/GRUB-ontology-74">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+
+    <!-- This is where is difined my classes -->
+
+    <Declaration>
+        <Class IRI="#Chinese"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#County"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DinnerParty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediaContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Picture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SteakHouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Town"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Townsland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Video"/>
+    </Declaration>
+
+<!-- This is where is classes were predifined by other ontologies -->
+
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#DarkMeatFowl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dessert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#LightMeatFowl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#NonRedMeat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#RedMeat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Shellfish"/>
+    </Declaration>
+
+<!-- This is where i difined my object properties  -->
+
+    <Declaration>
+        <ObjectProperty IRI="#IsSiblingOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpouse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFriendOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isParentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#livesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#posts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#rates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#upload"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasPostedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#writes"/>
+    </Declaration>
+
+
+<!-- This is where is object properties were predifined by other ontologies -->
+
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFavorite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFriend"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasSibling"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#inLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#isCapitalOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/holdsAccount"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+    </Declaration>
+
+    <!-- This is where i difined my data properties  -->
+
+
+    <Declaration>
+        <DataProperty IRI="#address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#caption"/>
+    </Declaration>
+
+<!-- This is where is data properties were predifined by other ontologies -->
+
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/accountName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/family_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/givenName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/givenname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/nick"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/status"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/title"/>
+    </Declaration>
+
+<!-- This is where i created my individauls  -->
+
+    <Declaration>
+        <NamedIndividual IRI="#Adalucia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdianOShea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AnabelPerezSanchez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ballymack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cadiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Callan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carbonara"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DarrenOKeffee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dublin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EoinDalton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HelenDalton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ireland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KenClancy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kilkenny"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#La_Linea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lenister"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NaimhDalton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OrlaDalton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Picture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SorchaDalton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Steak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Swans"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Video"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WillimWall"/>
+    </Declaration>
+
+<!-- This is where sub-classes are difined -->
+
+    <SubClassOf>
+        <Class IRI="#Chinese"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comment"/>
+        <Class IRI="#MediaContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#County"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DinnerParty"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indian"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Picture"/>
+        <Class IRI="#MediaContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SteakHouse"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Town"/>
+        <Class IRI="#County"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Townsland"/>
+        <Class IRI="#County"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Video"/>
+        <Class IRI="#MediaContent"/>
+    </SubClassOf>
+
+<!-- This is where sub-classes are difined -->
+
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#City"/>
+        <Class IRI="#County"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Country"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#State"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#DarkMeatFowl"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dessert"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fish"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#LightMeatFowl"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#NonRedMeat"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#RedMeat"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Shellfish"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+    </SubClassOf>
+
+<!-- This is where disjoint classes are defined. Disjoint classes are classes that can't be the same a Chinese resteraunt is not the same as Indian resteraunt-->
+
+    <DisjointClasses>
+        <Class IRI="#Chinese"/>
+        <Class IRI="#Indian"/>
+        <Class IRI="#SteakHouse"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Comment"/>
+        <Class IRI="#Picture"/>
+        <Class IRI="#Video"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Town"/>
+        <Class IRI="#Townsland"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#City"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#DarkMeatFowl"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#LightMeatFowl"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dessert"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dessert"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dessert"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dessert"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dessert"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fish"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Shellfish"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#NonRedMeat"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#RedMeat"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+    </DisjointClasses>
+
+<!-- These are class assertion these are like statement of fact. The first one reads the Adalucia is a state which is a fact or knowldge  -->
+
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#State"/>
+        <NamedIndividual IRI="#Adalucia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+        <NamedIndividual IRI="#AdianOShea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+        <NamedIndividual IRI="#AnabelPerezSanchez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Townsland"/>
+        <NamedIndividual IRI="#Ballymack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#City"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Town"/>
+        <NamedIndividual IRI="#Callan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+        <NamedIndividual IRI="#Carbonara"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MediaContent"/>
+        <NamedIndividual IRI="#Comment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+        <NamedIndividual IRI="#DarrenOKeffee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Country"/>
+        <NamedIndividual IRI="#Dublin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+        <NamedIndividual IRI="#HelenDalton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Country"/>
+        <NamedIndividual IRI="#Ireland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+        <NamedIndividual IRI="#KenClancy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#City"/>
+        <NamedIndividual IRI="#Kilkenny"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Town"/>
+        <NamedIndividual IRI="#La_Linea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#State"/>
+        <NamedIndividual IRI="#Lenister"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+        <NamedIndividual IRI="#NaimhDalton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+        <NamedIndividual IRI="#OrlaDalton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#Picture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+        <NamedIndividual IRI="#SorchaDalton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Country"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Town"/>
+        <NamedIndividual IRI="#Steak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chinese"/>
+        <NamedIndividual IRI="#Swans"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Video"/>
+        <NamedIndividual IRI="#Video"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+        <NamedIndividual IRI="#WillimWall"/>
+    </ClassAssertion>
+
+<!-- These are object assertion these are like statement of fact. The first one reads the Adalucia is located in Spain which is a fact or knowldge  -->
+
+
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#inLocatedIn"/>
+        <NamedIndividual IRI="#Adalucia"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFriend"/>
+        <NamedIndividual IRI="#AdianOShea"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFriend"/>
+        <NamedIndividual IRI="#AdianOShea"/>
+        <NamedIndividual IRI="#WillimWall"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#inLocatedIn"/>
+        <NamedIndividual IRI="#AdianOShea"/>
+        <NamedIndividual IRI="#KenClancy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+        <NamedIndividual IRI="#AdianOShea"/>
+        <NamedIndividual IRI="#SorchaDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <NamedIndividual IRI="#AnabelPerezSanchez"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFrom"/>
+        <NamedIndividual IRI="#AnabelPerezSanchez"/>
+        <NamedIndividual IRI="#La_Linea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#AnabelPerezSanchez"/>
+        <NamedIndividual IRI="#Callan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#inLocatedIn"/>
+        <NamedIndividual IRI="#Cadiz"/>
+        <NamedIndividual IRI="#Adalucia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#inLocatedIn"/>
+        <NamedIndividual IRI="#Callan"/>
+        <NamedIndividual IRI="#Kilkenny"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasPostedBy"/>
+        <NamedIndividual IRI="#Comment"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFriend"/>
+        <NamedIndividual IRI="#DarrenOKeffee"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#inLocatedIn"/>
+        <NamedIndividual IRI="#Dublin"/>
+        <NamedIndividual IRI="#Ireland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#isCapitalOf"/>
+        <NamedIndividual IRI="#Dublin"/>
+        <NamedIndividual IRI="#Ireland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsSiblingOf"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <NamedIndividual IRI="#SorchaDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <NamedIndividual IRI="#AnabelPerezSanchez"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFrom"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <NamedIndividual IRI="#Ballymack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <NamedIndividual IRI="#Callan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rates"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <NamedIndividual IRI="#Swans"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#upload"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <NamedIndividual IRI="#Picture"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#upload"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <NamedIndividual IRI="#Video"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#writes"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <NamedIndividual IRI="#Comment"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFavorite"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <NamedIndividual IRI="#Carbonara"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFriend"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <NamedIndividual IRI="#WillimWall"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasParent"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <NamedIndividual IRI="#HelenDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasSibling"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <NamedIndividual IRI="#SorchaDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isParentOf"/>
+        <NamedIndividual IRI="#HelenDalton"/>
+        <NamedIndividual IRI="#NaimhDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isParentOf"/>
+        <NamedIndividual IRI="#HelenDalton"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isParentOf"/>
+        <NamedIndividual IRI="#HelenDalton"/>
+        <NamedIndividual IRI="#SorchaDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isParentOf"/>
+        <NamedIndividual IRI="#HelenDalton"/>
+        <NamedIndividual IRI="#OrlaDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFriend"/>
+        <NamedIndividual IRI="#KenClancy"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFriend"/>
+        <NamedIndividual IRI="#KenClancy"/>
+        <NamedIndividual IRI="#WillimWall"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFriend"/>
+        <NamedIndividual IRI="#KenClancy"/>
+        <NamedIndividual IRI="#AdianOShea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#inLocatedIn"/>
+        <NamedIndividual IRI="#Kilkenny"/>
+        <NamedIndividual IRI="#Lenister"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#inLocatedIn"/>
+        <NamedIndividual IRI="#La_Linea"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#isPartOf"/>
+        <NamedIndividual IRI="#Lenister"/>
+        <NamedIndividual IRI="#Ireland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasParent"/>
+        <NamedIndividual IRI="#NaimhDalton"/>
+        <NamedIndividual IRI="#SorchaDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasParent"/>
+        <NamedIndividual IRI="#NaimhDalton"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasSibling"/>
+        <NamedIndividual IRI="#NaimhDalton"/>
+        <NamedIndividual IRI="#SorchaDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasSibling"/>
+        <NamedIndividual IRI="#NaimhDalton"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasParent"/>
+        <NamedIndividual IRI="#OrlaDalton"/>
+        <NamedIndividual IRI="#HelenDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasSibling"/>
+        <NamedIndividual IRI="#OrlaDalton"/>
+        <NamedIndividual IRI="#SorchaDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasSibling"/>
+        <NamedIndividual IRI="#OrlaDalton"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasSibling"/>
+        <NamedIndividual IRI="#OrlaDalton"/>
+        <NamedIndividual IRI="#NaimhDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasPostedBy"/>
+        <NamedIndividual IRI="#Picture"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasParent"/>
+        <NamedIndividual IRI="#SorchaDalton"/>
+        <NamedIndividual IRI="#HelenDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasSibling"/>
+        <NamedIndividual IRI="#SorchaDalton"/>
+        <NamedIndividual IRI="#NaimhDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasSibling"/>
+        <NamedIndividual IRI="#SorchaDalton"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasSibling"/>
+        <NamedIndividual IRI="#SorchaDalton"/>
+        <NamedIndividual IRI="#OrlaDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasPostedBy"/>
+        <NamedIndividual IRI="#Video"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rates"/>
+        <NamedIndividual IRI="#WillimWall"/>
+        <NamedIndividual IRI="#Steak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFavorite"/>
+        <NamedIndividual IRI="#WillimWall"/>
+        <NamedIndividual IRI="#Steak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFriend"/>
+        <NamedIndividual IRI="#WillimWall"/>
+        <NamedIndividual IRI="#AdianOShea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFriend"/>
+        <NamedIndividual IRI="#WillimWall"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFriend"/>
+        <NamedIndividual IRI="#WillimWall"/>
+        <NamedIndividual IRI="#KenClancy"/>
+    </ObjectPropertyAssertion>
+
+
+<!-- These are data assertions these are like statement of fact. The first one reads the Adalucia's name is Adalucia which is a fact or knowldge  -->
+
+
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Adalucia"/>
+        <Literal datatypeIRI="&xsd;string">Adalucia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#AdianOShea"/>
+        <Literal datatypeIRI="&xsd;string">Adian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+        <NamedIndividual IRI="#AdianOShea"/>
+        <Literal datatypeIRI="&xsd;string">O &apos;Shea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+        <NamedIndividual IRI="#AnabelPerezSanchez"/>
+        <Literal datatypeIRI="&xsd;string">30/12/1979</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#AnabelPerezSanchez"/>
+        <Literal datatypeIRI="&xsd;string">Ana Isabel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#AnabelPerezSanchez"/>
+        <Literal datatypeIRI="&xsd;string">Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+        <NamedIndividual IRI="#AnabelPerezSanchez"/>
+        <Literal datatypeIRI="&xsd;string">Perez Sanchez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/status"/>
+        <NamedIndividual IRI="#AnabelPerezSanchez"/>
+        <Literal datatypeIRI="&xsd;string">Married</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/title"/>
+        <NamedIndividual IRI="#AnabelPerezSanchez"/>
+        <Literal datatypeIRI="&xsd;string">Ms</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Ballymack"/>
+        <Literal datatypeIRI="&xsd;string">Ballymack</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Cadiz"/>
+        <Literal datatypeIRI="&xsd;string">Cadiz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Callan"/>
+        <Literal datatypeIRI="&xsd;string">Callan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Carbonara"/>
+        <Literal datatypeIRI="&xsd;string">Carbonara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Comment"/>
+        <Literal datatypeIRI="&xsd;string">How to make Carbonara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#DarrenOKeffee"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Darren</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+        <NamedIndividual IRI="#DarrenOKeffee"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">O &apos;Keffee</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Dublin"/>
+        <Literal datatypeIRI="&xsd;string">Dublin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/accountName"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <Literal datatypeIRI="&xsd;string">Clausy@Grub.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <Literal datatypeIRI="&xsd;integer">34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <Literal datatypeIRI="&xsd;string">05/12/1984</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <Literal datatypeIRI="&xsd;string">Eoin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <Literal datatypeIRI="&xsd;string">Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <Literal datatypeIRI="&xsd;string">Dalton</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/status"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <Literal datatypeIRI="&xsd;string">Married</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <Literal datatypeIRI="&xsd;string">Dalton</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/title"/>
+        <NamedIndividual IRI="#EoinDalton"/>
+        <Literal datatypeIRI="&xsd;string">Mr</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#HelenDalton"/>
+        <Literal datatypeIRI="&xsd;string">Helen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+        <NamedIndividual IRI="#HelenDalton"/>
+        <Literal datatypeIRI="&xsd;string">Dalton</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#KenClancy"/>
+        <Literal datatypeIRI="&xsd;string">Ken</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#KenClancy"/>
+        <Literal datatypeIRI="&xsd;string">Clancy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Kilkenny"/>
+        <Literal datatypeIRI="&xsd;string">Kilkenny</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#La_Linea"/>
+        <Literal datatypeIRI="&xsd;string">La Linea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Lenister"/>
+        <Literal datatypeIRI="&xsd;string">Lenister</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#NaimhDalton"/>
+        <Literal datatypeIRI="&xsd;string">Namih</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+        <NamedIndividual IRI="#NaimhDalton"/>
+        <Literal datatypeIRI="&xsd;string">Dalton</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#caption"/>
+        <NamedIndividual IRI="#Picture"/>
+        <Literal datatypeIRI="&xsd;string">Out for Dinner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#SorchaDalton"/>
+        <Literal datatypeIRI="&xsd;string">Sorcha</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+        <NamedIndividual IRI="#SorchaDalton"/>
+        <Literal datatypeIRI="&xsd;string">Dalton</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Steak"/>
+        <Literal datatypeIRI="&xsd;string">Serlion Steak</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Swans"/>
+        <Literal datatypeIRI="&xsd;string">Swans</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Video"/>
+        <Literal datatypeIRI="&xsd;string">How to Make Carbonara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#WillimWall"/>
+        <Literal datatypeIRI="&xsd;string">Willim</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+        <NamedIndividual IRI="#WillimWall"/>
+        <Literal datatypeIRI="&xsd;string">Wall</Literal>
+    </DataPropertyAssertion>
+
+<!-- These are object sub properties. is captial of is a sub property of is located is because Dublin is located in Ireland and is the capital of Ireland.  -->
+
+
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#posts"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#writes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#isCapitalOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#inLocatedIn"/>
+    </SubObjectPropertyOf>
+
+<!-- These are inverse object properties what this means is that is that i have a sister but i am a brother of my sister they have the same meaning -->
+
+
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#IsSiblingOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasSibling"/>
+    </InverseObjectProperties>
+
+<!-- These are domain object  properties a doamin is a concept. The first state say only a person can generte an event -->
+
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generates"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#livesIn"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#rates"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#upload"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#writes"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFavorite"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#inLocatedIn"/>
+        <Class IRI="#County"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#isPartOf"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#State"/>
+    </ObjectPropertyDomain>
+
+<!-- These are domain object  properties a range is a object property. The first states that Events can only be genrated  -->
+
+    
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generates"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#rates"/>
+        <Class IRI="#MediaContent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#rates"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#rates"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#upload"/>
+        <Class IRI="#MediaContent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#writes"/>
+        <Class IRI="#Comment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#hasFavorite"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#inLocatedIn"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#isPartOf"/>
+        <Class IRI="http://www.semanticweb.org/eoin/ontologies/2019/2/untitled-ontology-74#Country"/>
+    </ObjectPropertyRange>
+
+
+<!-- A Functional is a property that can only contain one value -->
+
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+    </FunctionalDataProperty>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/accountName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/family_name"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/status"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+
+
+<!-- AnnotationAssertion states that “annotation properties allow arbitrary information to be added to selected portions of an OWL ontology” and an “assertion is an axiom that declares something about one or more concrete objects in the class hierarchy”.  -->
+
+
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Comment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Post relating to a rescipe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates the name (identifier) associated with this online account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountName</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">account name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/accountName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/age</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The age in years of some agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/age</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/age</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">age</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/age</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/birthday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The birthday of this Agent, represented in mm-dd string form, eg. &apos;12-31&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/birthday</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/birthday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">birthday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/birthday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/familyName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The family name of some person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/familyName</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/familyName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">familyName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/familyName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/family_name</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The family name of some person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/family_name</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/family_name</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">family_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/family_name</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">archaic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/firstName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The first name of a person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/firstName</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/firstName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">firstName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/firstName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/gender</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The gender of this Agent (typically but not necessarily &apos;male&apos; or &apos;female&apos;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/gender</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/gender</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gender</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/gender</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The given name of some person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenName</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Given name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenname</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The given name of some person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenname</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenname</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Given name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/givenname</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">archaic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/holdsAccount</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates an account held by this agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/holdsAccount</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/holdsAccount</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/holdsAccount</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">archaic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/knows</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person known by this person (indicating some level of reciprocated interaction between the parties).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/knows</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/knows</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">knows</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/knows</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/lastName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The last name of a person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/lastName</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/lastName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">lastName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/lastName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A name for some thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/nick</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/nick</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/nick</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">nickname</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/nick</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/status</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A string expressing what the user is happy for the general public (normally) to know about their current activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/status</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/status</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/status</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/surname</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The surname of some person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/surname</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/surname</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Surname</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/surname</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">archaic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/title</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Title (Mr, Mrs, Ms, Dr. etc)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/title</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/title</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/title</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">testing</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
